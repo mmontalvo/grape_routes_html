@@ -5,7 +5,6 @@ module GrapeRoutesHtml
   def initialize
     
     grape_endpoints = ObjectSpace.each_object(Class).select { |klass| klass < Grape::API}
-# [API::V1::XXX1, API::V1::XXX2, .. ]
 
     main_html = "<div id='grape_routes_info'>"
     
