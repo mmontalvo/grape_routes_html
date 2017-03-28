@@ -10,8 +10,6 @@ module GrapeRoutesHtml
     
     grape_endpoints.each do |grape_endpoint|
       
-# API::V1::XXX
-
       grape_endpoint_html = "<table class='grape_endpoint'>"
       grape_endpoint_html += "<thead><tr><th colspan='7'>#{grape_endpoint.to_s}</th></tr>"
       grape_endpoint_html += "<tr><th>Params</th><th>Description</th><th>Prefix</th><th>Version</th><th>Namespace</th><th>Method</th><th>Path</th></tr></thead><tbody>"
