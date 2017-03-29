@@ -16,12 +16,8 @@ module GrapeRoutesHtml
       grape_endpoint_html += "<thead><tr><th colspan='7'>#{grape_endpoint.to_s}</th></tr>"
       grape_endpoint_html += "<tr><th>Params</th><th>Description</th><th>Prefix</th><th>Version</th><th>Namespace</th><th>Method</th><th>Path</th></tr></thead><tbody>"
       routes_endpoint = grape_endpoint.routes
-# routes
       routes_endpoint.each do |route_endpoint|
-# route
         options_values = route_endpoint.instance_values['options']
-        
-# route options keys       
         grape_endpoint_html += "<tr>"
         [:params, :description, :prefix, :version, :namespace, :method, :path].each do |key|
           grape_endpoint_html += "<td>#{options_values[key]}</td>"
