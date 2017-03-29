@@ -23,9 +23,6 @@ module GrapeRoutesHtml
         
 # route options keys       
         grape_endpoint_html += "<tr>"
-        [:params, :description, :prefix, :version, :namespace, :method, :path].each do |key|
-          grape_endpoint_html += "<td>#{options_values[key]}</td>"
-        end
         grape_endpoint_html += "</tr>"
       end
 
